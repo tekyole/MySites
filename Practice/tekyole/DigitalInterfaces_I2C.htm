@@ -1,0 +1,113 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong> Inter-Integrated Circuit (I2C)
+		</strong> <br /> The I2C bus is a bi-directional serial bus that is capable of supporting multiple masters and slaves. The I2C bus has a simple structure. It has only two serial bi-directional lines: 1. Serial Data Line (SDA), and 2. Serial Clock Line (SCL). <br />
+	</p>
+</div>
+
+<div id="q1-fig1">
+		<img src="DigitalInterfaces_I2C_fig1.png" alt="I2C configuration" style="width:853px;height:172px" >
+</div>
+
+<div id="q2"> 
+	<p> Each device on I2C bus has a unique address. The Master device controls the bus access and communication over the bus. In I2C bus masters and slaves both can send and receive data. Note that although there may be more than one master in the system, the bus is always controlled by only one master at a given time that will generate the SCL signal.	
+	Both SCL and SDA in I2C configuration are open drained and must be pulled up to Vcc with a resistor. <br /> 
+	When the I2C bus is not used and it is idle, SCL and SDA both are at logic 1 level. The communication is started by the master issuing "START" signal. START signal is a high to low transition on SDA while SCL is kept high. Figure below shows the START signal. <br />
+	</p>
+</div>
+<div id="q2-fig1">
+		<img src="DigitalInterfaces_I2C_fig2.png" alt="I2C START Signal" style="width:263px;height:129px" >
+</div>
+
+<div id="q3"> 
+	<p> After the START signal, the master sends out the address of the slave it wants to communicate with. The address is 7 bits wide and is followed by a read or write bit (R/W). If R/W is 0, it indicates a write from the master to the slave and if it is 1 it indicates a read from the slave to the master. <br /> 
+	As mentioned above the master controls the SCL, and it will send out the bits on the SDA line, one bit per clock cycle of the SCL line. The communication is done serially and the data is sent starting from the most significant bit (MSB) to the least significant bit (LSB). Note that the value on the SDA line can only change when the SCL line is low. <br />
+	Every slave has a unique address, and the slave whose address matches the address sent out by the master will respond with an acknowledgement signal on the SDA line by pulling the SDA line low during the 9th clock cycle of the SCL line. The R/W determines whether the master or the slave will be the transmitter next. <br /> 
+	Data is transmitted in 8-bits wide (one byte) packets. In I2C there is no limit in the number of the bytes that can be transmitted. Each byte transmitted has to be followed by an acknowledge bit. The transmitter should release the SDA line during the acknowledge clock pulse, and the receiver must pull down the SDA line during the acknowledge clock pulse to acknowledge the receipt of the byte. To signal the end of data transfer, the master should generate and send a STOP signal by pulling the SDA line from low to high while the SCL line is high.
+	</p>
+</div>
+<div id="q3-fig1">
+		<img src="DigitalInterfaces_I2C_fig3.png" alt="I2C STOP Signal" style="width:247px;height:130px" >
+</div>
+
+<div id="q3-fig2">
+		<img src="DigitalInterfaces_I2C_fig4.png" alt="Communication over I2C bus" style="width:926px;height:173px" >
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+#q1-fig1 {
+	position:absolute;
+    left:37em;
+	top:19em; }
+	
+#q2 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:22em; }
+#q2-fig1 {
+	position:absolute;
+    left:37em;
+	top:40em; }
+	
+#q3 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:37em; }
+#q3-fig1 {
+	position:absolute;
+    left:37em;
+	top:69em; }
+#q3-fig2 {
+	position:absolute;
+    left:37em;
+	top:79em; }
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+

@@ -1,0 +1,382 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<div id="q1"> 
+	<p> 
+		<strong>- What is Physical verification?
+		</strong> <br /> Physical verification checks the correctness of the layout design. It involves several steps: DRC (Design rule check), LVS (Layout versus schematic) Check, XOR Checks, ERC (Electrical Rule Check) and Antenna Checks. <br />-----  
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>- What is XOR Check?
+		</strong> <br /> XOR Check involves comparing two layouts by XOR operation. It is run after a metal spin. It compares the original and modified database. The idea is to make sure that the desired modifications are all done and no undesired modifications have been made. The XOR check will generate a database, containing all of the geometrical mismatches. <br />-----  
+	</p>
+</div>
+
+<div id="q3"> 
+	<p> 
+		<strong>- What is Antenna Check?
+		</strong> <br /> Whenever a conductor like poly-silicon or metal is not electrically connected to silicon or grounded, antenna effect may happen. That is because if no connection to silicon exist, charges may build up on the interconnect, and at some point rapid discharge take place which can cause permanent physical damage to thin transistor gate oxide. This destructive phenomenon is known as the antenna effect.
+		<br />Solution: The antenna effect can be avoided, if we avoid having large interconnect area to gate ratio or by using diodes placed near the MOSFET. <br />-----
+	</p>
+</div>
+
+<div id="q4"> 
+	<p> 
+		<strong>- What is ERC (Electrical Rule Check)?
+		</strong> <br /> This process checks the design for all well and substrate areas for proper contacts and spacing, and ensures power and ground connections are connected correctly. ERC may also involve checks for unconnected inputs or shorted outputs. <br />----- 
+ 	</p>
+</div>
+
+<div id="q5"> 
+	<p> 
+		<strong>- What are Design Rule Check (DRC) and Layout vs. Schematic (LVS)? 
+		</strong> <br />DRC is a process in which the physical netlist is compared against a set of design rules and whenever a violation is found it it is flagged. 
+		<br />LVS is a process to ensure that the layout has the same structure as the associated schematic. LVS is typically the final step in the layout process. The inputs for the LVS tool are the schematic diagram of the design and the extracted view from the layout. The tool generates a netlist from each of these inputs and compares everything in them (nodes, ports, and device sizing). If they are the same, LVS test is passed. <br />----- 
+	</p>
+</div>
+
+<div id="q6"> 
+	<p> 
+		<strong>- What is GDSII?
+		</strong> <br />Once the design has been physically verified, the layout is represented in the GDSII stream format that is sent for fabrication.
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:9em; }
+
+#q2 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:14em;}
+
+#q3 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:19em; }
+
+#q4 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:26em; }
+
+#q5 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:31em; }
+
+#q6 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:38em; }	
+
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+
+
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="#">Sub Menu Item 1</a></li>
+			<li><a href="#">Sub Menu Item 2</a></li>
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="#">I2C</a></li>
+			<li><a href="#">SPI</a></li>
+			<li><a href="#">Sub Menu Item 3</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="Digital Interfaces_I2C.htm">I2C</a></li>
+			<li><a href="Digital Interfaces_SPI.htm">SPI</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>

@@ -1,0 +1,113 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong> Serial Peripheral Interface (SPI) 
+		</strong> <br /> SPI is a synchronous communication standard developed by Motorola to transfer data between chips. SPI configuration can have multiple Masters and Slaves. Figure below shows a typical SPI configuration: <br />
+	</p>
+</div>
+
+<div id="q1-fig1">
+		<img src="DigitalInterfaces_SPI_fig1.png" alt="SPI configuration" style="width:903px;height:522px" >
+</div>
+
+<div id="q2"> 
+	<p> Based on how data is sampled, 4 modes of operation can be defined for SPI. Before discussing these 4 modes we should define two parameters: <br />
+	<em> CPOL:</em> <br /> &nbsp; Clock polarity, it simply determines whether the default state of the clock is high or low. <br />
+	<em> CPHA:</em> <br /> &nbsp; Clock phase, it determines whether data is sampled at the falling or rising edge of the clock. <br /> <br />
+	<strong> SPI has 4 modes of operation:</strong> <br />
+	<em> - Mode 0 (CPOL = 0, CPHA = 0):</em> <br /> 
+	&nbsp; As soon as SS goes low, data transfer starts. Data is sampled at rising edge of the clock,  and changes (new data) on falling edge of the clock. <br />
+	<em> - Mode 1 (CPOL = 0, CPHA = 1):</em> <br /> 
+	&nbsp; As soon as SS goes low, data transfer starts. Data is sampled at falling edge of the clock, and changes (new data) on rising edge of the clock. <br />
+	<em> - Mode 2 (CPOL = 1, CPHA = 0):</em> <br /> 
+	&nbsp; The first bit of data starts on first clock edge. Data is sampled at falling edge of the clock, and changes (new data) on rising edge of the clock. <br />
+	<em> - Mode 3 (CPOL = 1, CPHA = 1):</em> <br /> 
+	&nbsp; The first bit of data starts on first clock edge. Data is sampled at rising edge of the clock, and changes (new data) on falling edge of the clock. <br /> <br />	
+	</p>
+</div>
+<div id="q2-fig1">
+		<img src="DigitalInterfaces_SPI_fig2.png" alt="SPI 4 modes of operation" style="width:589px;height:340px" >
+</div>
+
+<div id="q3"> 
+	<p> <strong> Data transmission: </strong> <br />
+		Transmissions between chips in SPI usually involve two shift registers, one in the master and one in the slave. They are typically connected in a ring fashion. As shown in figure below usually transmit of data starts with the most significant bit (MSB) and continues to least significant bit (LSB). In case, more data needs to be transmitted the shift registers can be reloaded and the same process can be repeated. There is no limit on the amount of communication, and it can be continued for any number of clock cycles. When data transmit is completed, the master will stop toggling the clock signal, and de-selects the slave. <br />
+		Note that any slave bus that is not selected will disregard the input clock and MOSI signals, and will not drive MISO. The master must only select one slave at a time.	<br />
+	</p>
+</div>
+<div id="q3-fig1">
+		<img src="DigitalInterfaces_SPI_fig3.png" alt="Simplified NMOS and PMOS Structure" style="width:738px;height:197px" >
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+#q1-fig1 {
+	position:absolute;
+    left:37em;
+	top:19em; }
+	
+#q2 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:40em; }
+#q2-fig1 {
+	position:absolute;
+    left:37em;
+	top:78em; }
+	
+#q3 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:75em; }
+#q3-fig1 {
+	position:absolute;
+    left:37em;
+	top:110em; }
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+

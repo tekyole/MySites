@@ -1,0 +1,125 @@
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="Digital Interfaces_I2C.htm">I2C</a></li>
+			<li><a href="Digital Interfaces_SPI.htm">SPI</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>

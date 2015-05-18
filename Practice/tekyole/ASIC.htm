@@ -1,0 +1,184 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong>- What is ASIC? </strong> <br /> 
+		As its name suggests ASIC (Application Specific Integrated Circuits) are integrated circuits designed for a specific application rather than general purpose use. The application could be anything like a microprocessor, a chip designed to do a certain function on cell phone, router, etc. With the advances in design and fabrication of CMOS technology, ASIC now can include a complete system in a single chip (System on a Chip (SOC)). <br /> -----  
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>- What are standard Cells?  </strong> <br /> 
+		Standard Cells are pre-designed and optimized gates and functional blocks stored in a library that are used to reduce design time. For instance consider a simple adder A = B+C. Using a standard cell library (high level) design you don't need to worry about how the addition is done. Besides in this approach you have an estimate of the delay and power for various circuits that are already laid out.   <br /> -----  
+	</p>
+</div>
+
+<div id="q3"> 
+	<p> 
+		<strong>- Explain full custom ASIC design </strong> <br /> 
+		In this type of ASIC design, the designer designs all of logic cells, and also their layout. The designer does not use any pre-designed cells in the design. Basically every part of the design is done from scratch.   <br /> -----  
+	</p>
+</div>
+
+<div id="q4"> 
+	<p> 
+		<strong>- What are hierarchical and flat design methods in the concept of ASIC design? </strong> <br /> 
+		Hierarchical design has blocks, sub-blocks arranged in a hierarchy, while flat design has no sub-blocks and all of the system is fit inside one big module. Most of the systems use hierarchical design, because usually more than one person is involved in the design process, and  hierarchical designs are more readable and more importantly are reusable.  <br /> -----  
+	</p>
+</div>
+
+<div id="q5"> 
+	<p> 
+		<strong>- Explain the logic synthesis process? </strong> <br /> 
+		Logic synthesis is a process in which an abstract form of the desired circuit behavior (typically in Verilog or VHDL), is translated into a logic gates. The design tool will generate a netlist of the design that you have synthesized.  <br /> -----  
+	</p>
+</div>
+
+<div id="q6"> 
+	<p> 
+		<strong>- What does synthesis mean? </strong> <br /> 
+		1: Define design specifications <br /> 
+		2: Design capture in C, C++, SystemC, or System Verilog <br /> 
+		3: Partitioning: divide the system into small blocks. This is done mainly to separate different functional blocks and to make placement and routing easier. <br /> 
+		4: RTL design (must be synthesizable) <br /> 
+		5: Verify the system (functional verification)<br /> 
+		6: Prepare the Design Constraints file (clock definitions (frequency, uncertainity, jitter), define I/O delays, and define output pad load <br /> 
+		7: Synthesize the system<br /> 
+		8: Placement <br /> 
+		9: Generate system floorplan and create the pad-ring. <br /> 
+		10: Routing <br /> 
+		11: Physical verification  (Functional, Timing, Area, Power, DFT, DRC, LVS, ERC, ESD, SI/IR-Drop) <br /> 
+		12: Generate GDS file and send chip to fabrication  <br /> -----  
+	</p>
+</div>
+
+<div id="q7"> 
+	<p> 
+		<strong>- What is VLSI? </strong> <br /> 
+		Very large Scale Integration (VLSI) is the process of creating integrated circuits that have thousands of transistors in a single chip.  <br /> -----  
+	</p>
+</div>
+
+<div id="q8"> 
+	<p> 
+		<strong>- Explain the main steps in physical or backend design process</strong> <br /> 
+		The main steps are:  <br />
+		- Floor Planning:  <br />
+		Floorplanning is simply the process of finding an optimum (the best) way to place different blocks beside each other to meet a certain or multiple criterias. For example your goal may be minimizing the overall area or the interconnect (wire) length between blocks.<br />
+		- Partitioning: <br />
+		Partitioning is a process of dividing the chip into small blocks (rather than having one big block). Partitioning helps to separate different functional blocks and makes placement and routing easier. Partitioning is usually done in the RTL design level where the system designers partition the system into sub-blocks and then design each module. This kind of partitioning is called Logical Partitioning.<br />
+		- Placement: <br />
+		Placement is the process of assigning locations for each gate in the netlist (done by the tool after floor planning). The result contains the actual physical location of each gate in the netlist. <br />
+		- Clock tree synthesis: <br />
+		The goal of clock tree synthesis is to minimize skew and delay.  <br />
+		- Routing: <br />
+		During teh routing both signal and power supply lines are added to the design. The fully routed physical netlist, will contain the list of gates from synthesis, the location (placement) of each gate from placement, and the drawn interconnects from routing. <br />
+		- Physical Verification: <br />
+		Physical verification is a process where the layout of the design is checked to make sure if it meets certain criteria. Physical verification involves DRC (Design rule check), LVS (Layout versus schematic), ERC (Electrical Rule Check), XOR (Exclusive OR), and Antenna Checks. <br />
+		- GDS II Generation: <br />
+		GDS (Graphic Database System) II stream format, is a database file format that is an industry standard for integrated circuit layout. It is a binary file format that includes all information about system layout.	<br /> -----  
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+
+#q2 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:15em; }
+
+#q3 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:21em; }
+
+#q4 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:26em; }	
+	
+#q5 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:32em; }	
+
+#q6 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:37em; }	
+
+#q7 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:54em; }	
+
+#q8 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:58em; }	
+
+	
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+

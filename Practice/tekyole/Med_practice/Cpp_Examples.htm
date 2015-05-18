@@ -1,0 +1,366 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong>- Write an algorithm that will get a string and reverses the characters in it </strong> <br /> 
+		We can use a temporary char variable to store the characters whose their location will be changed:  <br /> 
+		<em>
+		&nbsp; void reverse_a_string(char* s)  {  	     <br /> 
+		&nbsp; &nbsp; 	int i;   					     <br /> 
+		&nbsp; &nbsp; 	char temp;   				     <br /> 
+		&nbsp; &nbsp; 	size_t l = strlen(s);            <br />  <br />
+			  
+		&nbsp; &nbsp; 	for (i = 0; i &lt (l/2); ++i) {  <br />  
+		&nbsp; &nbsp; &nbsp; 	   temp = s[i];          <br /> 
+		&nbsp; &nbsp; &nbsp; 	   s[i] = s[l - i];      <br /> 
+		&nbsp; &nbsp; &nbsp; 	   s[l - i] = temp;      <br /> 
+		&nbsp; &nbsp; 	}   						     <br /> 
+		&nbsp; }</em>                                    <br /> -----  
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>- Write a code to reverse word in a sentence in their place in the sentence. For example if a sentence like this is given "How are you", the result should be "woh era uoy".</strong> <br />
+		To do this we will first reverse the whole sentence. That means the eample above will turn to "uoy era woh". Then we will swap ... <br /> 
+		<em> 
+		&nbsp; void reverse_a_sentence_in_place(char *l, char *r);  		<br />
+
+		&nbsp; &nbsp; int main(int argc, char *argv[]) { 					<br />
+		&nbsp; &nbsp; &nbsp; char buf[] = "How are you"; 					<br />
+		&nbsp; &nbsp; &nbsp; char *end, *x, *y; 							<br />
+
+		&nbsp; &nbsp; // Reverse the whole sentence first.. 				<br />
+		&nbsp; &nbsp; &nbsp; for(end=buf; *end; end++);{ 					<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; rev(buf, end-1);						<br />
+		&nbsp; &nbsp; &nbsp; } 												<br />
+
+		// Now swap each word within sentence... 							<br />
+		&nbsp; &nbsp; &nbsp; x = buf-1;  									<br />
+		&nbsp; &nbsp; &nbsp; y = buf;  										<br />
+
+		&nbsp; &nbsp; &nbsp; while(x++ < end) {								<br />
+		&nbsp; &nbsp; &nbsp; if(*x == '\0' || *x == ' ') {					<br />
+		&nbsp; &nbsp; &nbsp; rev(y, x-1); 									<br />
+		&nbsp; &nbsp; &nbsp; y = x+1; 										<br />
+		&nbsp; &nbsp; } 													<br />
+		&nbsp; &nbsp; }  													<br />
+
+		// Now print the final string.... 									<br />
+		&nbsp; &nbsp; &nbsp; printf("%s\n",buf); 							<br />
+		&nbsp; &nbsp; &nbsp; return(0); 									<br />
+		} </em>
+   <br /> -----  
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+
+#q2 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:26em; }
+	
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+
+
+
+
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="#">Sub Menu Item 1</a></li>
+			<li><a href="#">Sub Menu Item 2</a></li>
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="#">I2C</a></li>
+			<li><a href="#">SPI</a></li>
+			<li><a href="#">Sub Menu Item 3</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="Digital Interfaces_I2C.htm">I2C</a></li>
+			<li><a href="Digital Interfaces_SPI.htm">SPI</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>

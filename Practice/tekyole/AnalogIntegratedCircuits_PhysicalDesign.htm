@@ -1,0 +1,128 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<div id="q1"> 
+	<p> 
+		<strong>- What is Physical verification?
+		</strong> <br /> Physical verification checks the correctness of the layout design. It involves several steps: DRC (Design rule check), LVS (Layout versus schematic) Check, XOR Checks, ERC (Electrical Rule Check) and Antenna Checks. <br />-----  
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>- What is XOR Check?
+		</strong> <br /> XOR Check involves comparing two layouts by XOR operation. It is run after a metal spin. It compares the original and modified database. The idea is to make sure that the desired modifications are all done and no undesired modifications have been made. The XOR check will generate a database, containing all of the geometrical mismatches. <br />-----  
+	</p>
+</div>
+
+<div id="q3"> 
+	<p> 
+		<strong>- What is Antenna Check?
+		</strong> <br /> Whenever a conductor like poly-silicon or metal is not electrically connected to silicon or grounded, antenna effect may happen. That is because if no connection to silicon exist, charges may build up on the interconnect, and at some point rapid discharge take place which can cause permanent physical damage to thin transistor gate oxide. This destructive phenomenon is known as the antenna effect.
+		<br />Solution: The antenna effect can be avoided, if we avoid having large interconnect area to gate ratio or by using diodes placed near the MOSFET. <br />-----
+	</p>
+</div>
+
+<div id="q4"> 
+	<p> 
+		<strong>- What is ERC (Electrical Rule Check)?
+		</strong> <br /> This process checks the design for all well and substrate areas for proper contacts and spacing, and ensures power and ground connections are connected correctly. ERC may also involve checks for unconnected inputs or shorted outputs. <br />----- 
+ 	</p>
+</div>
+
+<div id="q5"> 
+	<p> 
+		<strong>- What are Design Rule Check (DRC) and Layout vs. Schematic (LVS)? 
+		</strong> <br />DRC is a process in which the physical netlist is compared against a set of design rules and whenever a violation is found it it is flagged. 
+		<br />LVS is a process to ensure that the layout has the same structure as the associated schematic. LVS is typically the final step in the layout process. The inputs for the LVS tool are the schematic diagram of the design and the extracted view from the layout. The tool generates a netlist from each of these inputs and compares everything in them (nodes, ports, and device sizing). If they are the same, LVS test is passed. <br />----- 
+	</p>
+</div>
+
+<div id="q6"> 
+	<p> 
+		<strong>- What is GDSII?
+		</strong> <br />Once the design has been physically verified, the layout is represented in the GDSII stream format that is sent for fabrication.
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:9em; }
+
+#q2 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:14em;}
+
+#q3 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:19em; }
+
+#q4 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:26em; }
+
+#q5 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:31em; }
+
+#q6 {
+	width: 1500px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+	position:absolute;
+    left:20em;
+	top:38em; }	
+
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+

@@ -1,0 +1,349 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong>What is object oriented programming?
+		</strong> <br /> In object oriented programming the data, variables, and functions that perform a certain task are combined into single unit. This unit is called an object. Each object can have properties and member functions. You can call member function to access data of an object. <br />----- 
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>What is data encapsulation? What are public, private, and protected keywords in C++ used for?
+		</strong> <br /> Data encapsulation (sometimes called data hiding) is the mechanism that enables the programmer to control and restrict the access to some of the object's members or components. <br /> 
+		In C++, the concept of data encapsulation is supported through the use of the 3 keywords used in declaration of the class:  <br />  
+		- public:  <br /> 
+		Anything in the class that is placed after the public keyword will be accessible to all of the users of the class. <br />
+		- protected:  <br />  
+		Anything in the class that is placed after the protected keyword will only be accessible to the member functions and friends of that class, and to the member functions and friends of derived classes. <br />
+		- private:  <br />
+		Anything in the class that is placed after the private keyword will only be accessible to the member functions and friends of that class. <br />-----
+	</p>
+</div>
+
+<div id="q3"> 
+	<p> 
+		<strong>Explain the concept of inheritance in object oriented programming.
+		</strong> <br /> It allows the code to be reused as many times as needed. The base class once defined and once it is compiled, it need not be reworked. Saves time and effort as the main code need not be written again.
+Inheritance allows one class to reuse the state and behavior of another class. The derived class inherits the properties and method implementations of the base class and extends it by overriding methods and adding additional properties and methods.  <br />-----
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: turquoise;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+
+#q2 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:14em; }
+
+#q3 {
+	width: 1450px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:28em; }
+	
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+
+
+
+
+
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="#">Sub Menu Item 1</a></li>
+			<li><a href="#">Sub Menu Item 2</a></li>
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="#">I2C</a></li>
+			<li><a href="#">SPI</a></li>
+			<li><a href="#">Sub Menu Item 3</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="Digital Interfaces_I2C.htm">I2C</a></li>
+			<li><a href="Digital Interfaces_SPI.htm">SPI</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>

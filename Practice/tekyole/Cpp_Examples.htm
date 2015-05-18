@@ -1,0 +1,108 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+		<strong>- Write an algorithm that will get a string and reverses the characters in it </strong> <br /> 
+		We can use a temporary char variable to store the characters whose their location will be changed:  <br /> 
+		<em>
+		&nbsp; void reverse_a_string(char* s)  {  	     <br /> 
+		&nbsp; &nbsp; 	int i;   					     <br /> 
+		&nbsp; &nbsp; 	char temp;   				     <br /> 
+		&nbsp; &nbsp; 	size_t l = strlen(s);            <br />  <br />
+			  
+		&nbsp; &nbsp; 	for (i = 0; i &lt (l/2); ++i) {  <br />  
+		&nbsp; &nbsp; &nbsp; 	   temp = s[i];          <br /> 
+		&nbsp; &nbsp; &nbsp; 	   s[i] = s[l - i];      <br /> 
+		&nbsp; &nbsp; &nbsp; 	   s[l - i] = temp;      <br /> 
+		&nbsp; &nbsp; 	}   						     <br /> 
+		&nbsp; }</em>                                    <br /> -----  
+	</p>
+</div>
+
+<div id="q2"> 
+	<p> 
+		<strong>- Write a code to reverse word in a sentence in their place in the sentence. For example if a sentence like this is given "How are you", the result should be "woh era uoy".</strong> <br />
+		To do this we will first reverse the whole sentence. That means the eample above will turn to "uoy era woh". Then we will swap ... <br /> 
+		<em> 
+		&nbsp; void reverse_a_sentence_in_place(char *l, char *r);  		<br />
+
+		&nbsp; &nbsp; int main(int argc, char *argv[]) { 					<br />
+		&nbsp; &nbsp; &nbsp; char buf[] = "How are you"; 					<br />
+		&nbsp; &nbsp; &nbsp; char *end, *x, *y; 							<br />
+
+		&nbsp; &nbsp; // Reverse the whole sentence first.. 				<br />
+		&nbsp; &nbsp; &nbsp; for(end=buf; *end; end++);{ 					<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; rev(buf, end-1);						<br />
+		&nbsp; &nbsp; &nbsp; } 												<br />
+
+		// Now swap each word within sentence... 							<br />
+		&nbsp; &nbsp; &nbsp; x = buf-1;  									<br />
+		&nbsp; &nbsp; &nbsp; y = buf;  										<br />
+
+		&nbsp; &nbsp; &nbsp; while(x++ < end) {								<br />
+		&nbsp; &nbsp; &nbsp; if(*x == '\0' || *x == ' ') {					<br />
+		&nbsp; &nbsp; &nbsp; rev(y, x-1); 									<br />
+		&nbsp; &nbsp; &nbsp; y = x+1; 										<br />
+		&nbsp; &nbsp; } 													<br />
+		&nbsp; &nbsp; }  													<br />
+
+		// Now print the final string.... 									<br />
+		&nbsp; &nbsp; &nbsp; printf("%s\n",buf); 							<br />
+		&nbsp; &nbsp; &nbsp; return(0); 									<br />
+		} </em>
+   <br /> -----  
+	</p>
+</div>
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+
+#q2 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:26em; }
+	
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+
