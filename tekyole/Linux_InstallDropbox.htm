@@ -1,0 +1,261 @@
+
+<StartOfHtm_MainContents>
+
+<body>
+
+<!-- Main content -->
+<div id="q1"> 
+	<p> 
+        Dropbox is a popular cloud storage and online backup system. If you are not familiar with dropbox, there is alot you are missing! check this link out to learn more about dropbox. </br>
+        Installing dropbox on linux like most of other softwares is not straight forward. In this post I will show you, how you can install dropbox on a linux centOS machine.	 </br>
+    </p>
+</div>
+
+<div id="q2"> 
+	<p> 
+    <strong>Installing dropbox on Linux CentOS </strong> </br>
+    Open Terminal and Switch User to root: </br>
+    su </br>
+    When prompted enter root password </br>
+    Since dropbox uses a package called libgnome, we should install libgnome first: </br>
+    sudo yum install libgnome </br>
+
+    Now you should download dropbox rpm package file from www.dropbox.com. If you are logged in to dropbox in your browser, you should logoff first to find these files. </br>
+    Download the Fedora (.rpm) file. Depending on your system, select the 64-bit or 32-bit one. </br>
+
+    Now in your Terminal, you need to go to the folder that dropbox rpm file is saved. It is usuall downloaded to /home/usr where usr is your username. You can go there using: </br>
+
+    cd /home/usr </br>
+
+    Install the downloaded rpm file using rpm command.  </br>
+    Keep in mind that dropbox may <strong> change </strong> the name of the file, as it releases new updates for its software. I downloaded the 64-bit version from dropbox and the filename was: nautilus-dropbox-2015.02.12-1.fedora.x86_64.rpm. Note 2015 in the file name, it is a clear indication that the file name will for sure change when they release new version. </br>
+    In my case I used this command, you should <strong> replace </strong> the rpm file name with whatever the name of the rpm file you have downloaded is: </br>
+
+    sudo rpm -ivh nautilus-dropbox-2015.02.12-1.fedora.x86_64.rpm </br>
+
+    Once you are done with the previous step, click on the "Applications" usually located on top right of your desktop, and look for dropbox. In my case, I found it under internet tab.  </br>
+    dropbox should start to download... </br>
+
+    Once the download is completed, you should log in, assuming that you already have an account with dropbox. You should receive an email from dropbox letting you know that your user has install dropbox on a new computer (a security notice) </br>
+
+    Click on "open my dropbox folder" </br>
+
+    
+ 
+	</p>
+</div>
+
+<div id=q4>
+    dropbox should automatically start to download your files. </br>
+    When I was done with installing dropbox, I noticed it has added a (lamp like) icon down the desktop. <br /> <br /> 
+    
+    <div id="Linux_InstallDropbox_fig4">
+	    <img src="Linux_InstallDropbox_fig4.png" alt="dropbox" style="width:662px;height:398px" >
+    </div>
+</div>
+
+
+
+</body>
+
+<EndOfHtm_mainContents>
+
+
+
+
+
+
+
+<StartOfCSS_MainContents>
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#q1 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:9em; }
+
+#q2 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:15em; }
+
+#q4 {
+	width: 1400px;
+    font-family: "Times New Roman";
+    font-size: 21px;
+	position:absolute;
+    left:19em;
+	top:55em; }
+#Linux_InstallDropbox_fig4 {
+		position:absolute;
+		left:4em; }
+
+</style>
+</head>
+
+<EndOfCSS_MainContents>
+
+
+
+
+
+
+
+<StartOfHtmTemplate>
+
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="DigitalInterfaces_I2C.htm">I2C</a></li>
+			<li><a href="DigitalInterfaces_SPI.htm">SPI</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	  <li><a href="Linux.htm">Linux</a>
+          <ul class="sub-level">                
+			<li><a href="Linux_InstallPython.htm">Installing Python on Linux CentOS</a></li>
+			<li><a href="Linux_InstallDropbox.htm">Installing Dropbox on Linux CentOS</a></li>
+			<li><a href="Linux_InstallSVN.htm">Installing SVN on Linux CentOS</a></li>
+			<li><a href="Linux_Commands.htm">Useful Linux commands</a></li>
+		  </ul>          
+	  <li><a href="SVN.htm">Subversion (SVN)</a>
+          <ul class="sub-level">                
+			<li><a href="WhatIsSVN.htm">What is SVN?</a></li>
+			<li><a href="Linux_InstallSVN.htm">Installing SVN on Linux CentOS</a></li>
+			<li><a href="Linux_Commands.htm">Useful SVN commands</a></li>
+		  </ul> 
+	  <li><a href="Vim.htm">Vim</a>
+	</ul>
+</div>
+<EndOfHtmTemplate>
+
+<StartOfCSSTemplate>
+
+<head1>
+<style type="text/css">>
+html {  height: 100%;
+        width : 100%; }
+        
+body {
+	    margin:       200;
+        padding:      0;
+        background:   white;
+	    padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top: 0em; }
+
+#color-bar {
+		    position:absolute;
+		    left:0em;
+		    top: 0em; }
+#color-bar table { border-collapse: collapse; }
+td{
+    width:   2em;
+	height:  2000px;
+	padding: 0px; }
+.color1{
+        background-color: black; }
+
+#navigation {
+                position: 	 absolute;
+                top:   		 10em;
+                left:  		 2em;
+                width: 		 17em;
+            	bottom:      0;
+            	font-family: "Times New Roman";
+                font-size:   16px }
+#navigation ul { 
+                margin:      0; 
+                padding:     0; }
+ul.top-level { 
+                background:	 blue; }
+ul.top-level li { 
+                    border-bottom: turquoise solid; 
+            		border-top:    turquoise solid; 
+            		border-width:  1px;	
+                    list-style:    none; }
+#navigation a { 
+        		color:          white; 
+		        cursor:         pointer; 
+        		display:        block; 
+		        height:         25px; 
+        		line-height:    25px; 
+                text-indent:    10px;
+        		text-decoration:none; 
+		        width:          100%;}
+#navigation a:hover{ 
+            		text-decoration:underline; } 
+#navigation li:hover { 
+                		background: #3366FF; }
+		
+ul.sub-level {    
+        		display: none; }
+li:hover .sub-level {    
+		                background:     blue;    
+                		border:         #fff solid;    
+                		border-width:   1px;    
+                		display:        block;    
+                		position:       absolute;    
+                		left:           75px; }
+ul.sub-level li {    
+		            border: none;    
+            		float:  left;    
+            		width:  250px; }
+</style>
+</head>
+
+<EndOfCSSTemplate>

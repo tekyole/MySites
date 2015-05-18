@@ -1,0 +1,142 @@
+<title>
+TekYole.com
+</title>
+
+<body>
+
+<div id="logo">
+	<img src="logo.png" alt="logo" style="width:2080px;height:192px" >
+</div>
+<div id="color-bar"> 
+	<table>
+		<tr> 
+			<td class="color1"></td>
+		</tr>
+	</table>
+</div>
+
+<!-- Main content -->
+<p> 
+The main purpose of this website is to provide a quick review of the important topics that Electrical and Computer Engineers deal with in their daily life. Although I may add some tutorials at some point but the main idea here is that if you are heading to a job interview or to a technical meeting, you browse the topics related to your job interview or meeting and not to stumble upon basic concepts and jeopardize your career.   <br /><br />This website is <strong>under construction </strong>, I will continue updating it. I have tons of stuff to add here, so if you find it useful, keep visiting it...
+<br /><br />Last updated: Jan 29, 2014 </p>
+
+
+<!-- Site navigation menu -->
+<div id="navigation">    
+	<ul class="top-level">
+	  <li><a href="Home.htm">Home</a>
+	  <li><a href="DigitalDesign.htm">Digital Design</a>
+	  <li><a href="Verilog.htm">Verilog</a>
+	  <li><a href="SystemVerilog.htm">SystemVerilog</a>
+	  <li><a href="Cpp.htm">C++</a>
+		  <ul class="sub-level">                
+			<li><a href="#">Sub Menu Item 1</a></li>
+			<li><a href="#">Sub Menu Item 2</a></li>
+			<li><a href="Cpp_Examples.htm">Eamples</a></li>
+			<li><a href="Cpp_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="AnalogIntegratedCircuits.htm">Analog Integrated Circuits</a>
+		  <ul class="sub-level">                
+			<li><a href="AnalogIntegratedCircuits_CMOSBasics.htm">CMOS Basics</a></li>
+			<li><a href="AnalogIntegratedCircuits_SecondOrderEffects.htm">Second order effects</a></li>
+			<li><a href="AnalogIntegratedCircuits_PhysicalDesign.htm">Physical Design</a></li>
+			<li><a href="AnalogIntegratedCircuits_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="ASIC.htm">ASIC</a>
+	  <li><a href="FPGA.htm">FPGA</a>
+	  <li><a href="#">Digital Interfaces</a>
+		  <ul class="sub-level">                
+			<li><a href="#">I2C</a></li>
+			<li><a href="#">SPI</a></li>
+			<li><a href="#">Sub Menu Item 3</a></li>
+			<li><a href="DigitalInterfaces_Books.htm">Books</a></li>
+		  </ul>
+	  <li><a href="#">CMOS failure and ageing mechanisms</a>
+	</ul>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+<head>
+<style type="text/css">>
+html { height: 100%; }
+body {
+	margin: 200;
+    padding: 0;
+    background: white;
+	padding-left: 15em; }
+
+#logo {
+		position:absolute;
+		left:2em;
+		top:0em; }
+#color-bar {
+		position:absolute;
+		left:0em;
+		top:0em; }
+#color-bar table { border-collapse: collapse; }
+		td{
+		   width: 2em;
+		   height: 2000px;
+		   padding: 0px; }
+.color1{
+  background-color: black; }
+
+#navigation {
+    position: 	 absolute;
+    top:   		 10em;
+    left:  		 2em;
+    width: 		 17em;
+	bottom:      0;
+	font-family: "Times New Roman";
+    font-size:   16px }
+#navigation ul { margin:0; padding:0; }
+	ul.top-level { 
+		background:	blue; }
+	ul.top-level li { 
+		border-bottom: turquoise solid; 
+		border-top:    turquoise solid; 
+		border-width:  1px;	}
+#navigation a { 
+		color: white; 
+		cursor: pointer; 
+		display:block; 
+		height:25px; 
+		line-height: 
+		25px; text-indent: 
+		10px;
+		text-decoration:none; 
+		width:100%;}
+#navigation a:hover{ 
+		text-decoration:underline; } 
+#navigation li:hover { 
+		background: #3366FF; }
+		
+ul.sub-level {    
+		display: none; }
+li:hover .sub-level {    
+		background: blue;    
+		border: #fff solid;    
+		border-width: 1px;    
+		display: block;    
+		position: absolute;    
+		left: 75px; }
+ul.sub-level li {    
+		border: none;    
+		float:  left;    
+		width:  150px; }
+
+p {
+    font-family: "Times New Roman";
+    font-size: 25px; }
+p {
+    width: 600px; } 
+</style>
+</head>
